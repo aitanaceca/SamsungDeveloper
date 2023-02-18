@@ -1,4 +1,9 @@
 const emailRegex = new RegExp("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
+const emptyError = "Rellene este campo.";
+const invalidNameError = "Debes introducir un nombre válido.";
+const invalidEmailError = "Email inválido.";
+const invalidPasswordError = "La contraseña tiene que tener mínimo 8 carácteres.";
+const notEqualPasswordsError = "Las contraseñas no coinciden.";
 
 function showErrorMessagge(fieldId, errorMessage) {
     let input = document.getElementById(fieldId).style;
@@ -19,6 +24,7 @@ function hideErrorMessage(fieldId) {
     let input = document.getElementById(fieldId).style;
     let error = document.querySelector('#' + fieldId + 'OnError');
     let brElement = document.querySelector('#' + fieldId + 'Br');
+    console.log(brElement)
     input.borderStyle = 'solid';
     input.borderColor = 'chartreuse';
     input.borderWidth = '3px';
@@ -32,11 +38,11 @@ function hideErrorMessage(fieldId) {
 function checkNameIsValid(nameInput) {
     let valid = true;
     if (nameInput.length === 0) {
-        showErrorMessagge("name", "Rellene este campo.");
+        showErrorMessagge("name", emptyError);
         valid = false;
     }
     if (nameInput.length > 0 && !isNaN(nameInput)) {
-        showErrorMessagge("name", "Debes introducir un nombre válido.");
+        showErrorMessagge("name", invalidNameError);
         valid = false
     }
     if (valid === true) {
@@ -49,11 +55,11 @@ function checkNameIsValid(nameInput) {
 function checkEmailIsValid(emailInput) {
     let valid = true;
     if (emailInput.length === 0) {
-        showErrorMessagge("email", "Rellene este campo.");
+        showErrorMessagge("email", emptyError);
         valid = false;
     }
     if (emailInput.length > 0 && !emailRegex.test(emailInput)) {
-        showErrorMessagge("email", "Email inválido.");
+        showErrorMessagge("email", invalidEmailError);
         valid =  false;
     }
     if (valid === true) {
@@ -66,24 +72,34 @@ function checkEmailIsValid(emailInput) {
 function checkPasswordsAreValid(pwdInput, confirmPwdInput) {
     let valid = true;
     if (pwdInput.length === 0) {
-        showErrorMessagge("pwd", "Rellene este campo.");
+        showErrorMessagge("pwd", emptyError);
         valid = false;
     }
     if (confirmPwdInput.length === 0) {
-        showErrorMessagge("confirmPwd", "Rellene este campo.");
+        showErrorMessagge("confirmPwd", emptyError);
         valid = false;
     }
     if (pwdInput.length > 0 && pwdInput.length < 8) {
-        showErrorMessagge("pwd", "La contraseña tiene que tener mínimo 8 carácteres.");
+        showErrorMessagge("pwd", invalidPasswordError);
         valid = false;
     }
     if (confirmPwdInput.length > 0 && confirmPwdInput.length < 8) {
-        showErrorMessagge("confirmPwd", "La contraseña tiene que tener mínimo 8 carácteres.");
+        showErrorMessagge("confirmPwd", invalidPasswordError);
+        valid = false;
+    }
+    if (pwdInput.length > 0 && pwdInput.length > 7 && confirmPwdInput.length === 0 && pwdInput !== confirmPwdInput) {
+        showErrorMessagge("pwd", notEqualPasswordsError);
+        showErrorMessagge("confirmPwd", emptyError);
+        valid = false;
+    }
+    if (pwdInput.length === 0 && confirmPwdInput.length > 0 && confirmPwdInput.length > 7 && pwdInput !== confirmPwdInput) {
+        showErrorMessagge("pwd", emptyError);
+        showErrorMessagge("confirmPwd", notEqualPasswordsError);
         valid = false;
     }
     if (pwdInput.length > 0 && confirmPwdInput.length > 0 && pwdInput !== confirmPwdInput) {
-        showErrorMessagge("pwd", "Las contraseñas no coinciden.");
-        showErrorMessagge("confirmPwd", "Las contraseñas no coinciden.");
+        showErrorMessagge("pwd", notEqualPasswordsError);
+        showErrorMessagge("confirmPwd", notEqualPasswordsError);
         valid = false;
     }
     if (valid === true) {

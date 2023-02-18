@@ -1,31 +1,31 @@
 const emailRegex = new RegExp("^([a-zA-Z0-9_\\-\\.]+)@([a-zA-Z0-9_\\-\\.]+)\\.([a-zA-Z]{2,5})$");
 
 function showErrorMessagge(fieldId, errorMessage) {
-    let input = document.getElementById(fieldId);
+    let input = document.getElementById(fieldId).style;
     let error = document.querySelector('#' + fieldId + 'OnError');
     let brElement = document.querySelector('#' + fieldId + 'Br');
-    input.style.borderStyle = 'solid';
-    input.style.borderColor = 'red';
-    input.style.borderWidth = '3px';
-    input.style.background = "url('./images/error-icon.svg') no-repeat scroll 10px 10px";
-    input.style.backgroundPosition = '395px center';
-    input.style.backgroundColor = 'white';
+    input.borderStyle = 'solid';
+    input.borderColor = 'red';
+    input.borderWidth = '3px';
+    input.background = "url('./images/error-icon.svg') no-repeat scroll 10px 10px";
+    input.backgroundPosition = '395px center';
+    input.backgroundColor = 'white';
     error.innerHTML = errorMessage;
     error.style.display = 'block';
     brElement.style.display = 'none';
 }
 
 function hideErrorMessage(fieldId) {
-    let input = document.getElementById(fieldId);
+    let input = document.getElementById(fieldId).style;
     let error = document.querySelector('#' + fieldId + 'OnError');
     let brElement = document.querySelector('#' + fieldId + 'Br');
     console.log(brElement)
-    input.style.borderStyle = 'solid';
-    input.style.borderColor = 'chartreuse';
-    input.style.borderWidth = '3px';
-    input.style.background = "url('./images/success-icon.svg') no-repeat scroll 10px 10px";
-    input.style.backgroundPosition = '395px center';
-    input.style.backgroundColor = 'white';
+    input.borderStyle = 'solid';
+    input.borderColor = 'chartreuse';
+    input.borderWidth = '3px';
+    input.background = "url('./images/success-icon.svg') no-repeat scroll 10px 10px";
+    input.backgroundPosition = '395px center';
+    input.backgroundColor = 'white';
     error.style.display = 'none';
     brElement.style.display = 'block';
 }
@@ -112,5 +112,5 @@ function checkFormIsValid() {
     const areValidPasswords = checkPasswordsAreValid(pwdInput, confirmPwdInput);
 
     console.log(isValidEmail, isValidName, areValidPasswords)
-    if (isValidName === isValidEmail === areValidPasswords === true) submitForm();
+    if (isValidName === true && isValidEmail === true && areValidPasswords === true) submitForm();
 }

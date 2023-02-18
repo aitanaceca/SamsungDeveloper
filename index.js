@@ -76,17 +76,17 @@ function checkPasswordsAreValid(pwdInput, confirmPwdInput) {
         showErrorMessagge("confirmPwd", "Rellene este campo.");
         valid = false;
     }
-    if (pwdInput.length > 0 && confirmPwdInput.length > 0 && pwdInput !== confirmPwdInput) {
-        showErrorMessagge("pwd", "Las contraseñas no coinciden.");
-        showErrorMessagge("confirmPwd", "Las contraseñas no coinciden.");
-        valid = false;
-    }
-    if (pwdInput.length < 8) {
+    if (pwdInput.length > 0 && pwdInput.length < 8) {
         showErrorMessagge("pwd", "La contraseña tiene que tener mínimo 8 carácteres.");
         valid = false;
     }
-    if (confirmPwdInput.length < 8) {
+    if (confirmPwdInput.length > 0 && confirmPwdInput.length < 8) {
         showErrorMessagge("confirmPwd", "La contraseña tiene que tener mínimo 8 carácteres.");
+        valid = false;
+    }
+    if (pwdInput.length > 0 && confirmPwdInput.length > 0 && pwdInput !== confirmPwdInput) {
+        showErrorMessagge("pwd", "Las contraseñas no coinciden.");
+        showErrorMessagge("confirmPwd", "Las contraseñas no coinciden.");
         valid = false;
     }
     if (valid === true) {

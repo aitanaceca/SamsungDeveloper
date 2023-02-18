@@ -12,19 +12,23 @@
             <form id="createAccountForm" method="post" action="./index.js" name="createAccount">
                 <h1>Create Account</h1><br>
 
-                <label for="name">Nombre </label><br>
-                <input class="field" type="text" pattern="[A-Za-z]" id="name" name="name"><br><br><br>
+                <label for="name"> Nombre </label><br>
+                <input class="field" type="text" pattern="[A-Za-z]" id="name" name="name"><br>
+                <span id="nameOnError" class="errorMessage">Error message.</span><br><br id="nameBr">
 
-                <label for="email">Email </label><br>
-                <input class="field" type="text" pattern="/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/" id="email" name="email"><br><br><br>
+                <label for="email"> Email </label><br>
+                <input class="field" type="email" id="email" name="email"><br>
+                <span id="emailOnError" class="errorMessage">Error message.</span><br><br id="emailBr">
 
-                <label for="pwd">Clave </label><br>
-                <input class="field" type="password" id="pwd" name="pwd"><br><br><br>
+                <label for="pwd"> Clave </label><br>
+                <input class="field" type="password" id="pwd" name="pwd"><br>
+                <span id="pwdOnError" class="errorMessage">Error message.</span><br><br id="pwdBr">
 
-                <label for="confirmPwd">Confirme su clave </label><br>
-                <input class="field" type="password" id="confirmPwd" name="confirmPwd"><br><br><br><br>
+                <label for="confirmPwd"> Confirme su clave </label><br>
+                <input class="field" type="password" id="confirmPwd" name="confirmPwd"><br>
+                <span id="confirmPwdOnError" class="errorMessage">Error message.</span><br><br><br id="confirmPwd">
 
-                <input class="check" type="button" id="check" value="ENVIAR" onclick="checkForm()"/>
+                <input class="check" type="button" id="check" value="ENVIAR" onclick="checkFormIsValid()"/>
             </form>
         </div>
     </body>

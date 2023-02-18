@@ -7,8 +7,9 @@ function showErrorMessagge(fieldId, errorMessage) {
     input.style.borderStyle = 'solid';
     input.style.borderColor = 'red';
     input.style.borderWidth = '3px';
-    //input.style.background = url('./images/error-icon.svg');
-    //input.style.paddingLeft = '30px'
+    input.style.background = "url('./images/error-icon.svg') no-repeat scroll 10px 10px";
+    input.style.backgroundPosition = '395px center';
+    input.style.backgroundColor = 'white';
     error.innerHTML = errorMessage;
     error.style.display = 'block';
     brElement.style.display = 'none';
@@ -18,11 +19,13 @@ function hideErrorMessage(fieldId) {
     let input = document.getElementById(fieldId);
     let error = document.querySelector('#' + fieldId + 'OnError');
     let brElement = document.querySelector('#' + fieldId + 'Br');
+    console.log(brElement)
     input.style.borderStyle = 'solid';
     input.style.borderColor = 'chartreuse';
     input.style.borderWidth = '3px';
-    //input.style.background = url('./images/success-icon.svg');
-    //input.style.paddingLeft = '30px'
+    input.style.background = "url('./images/success-icon.svg') no-repeat scroll 10px 10px";
+    input.style.backgroundPosition = '395px center';
+    input.style.backgroundColor = 'white';
     error.style.display = 'none';
     brElement.style.display = 'block';
 }
@@ -41,6 +44,7 @@ function checkNameIsValid(nameInput) {
         hideErrorMessage("name");
     }
 
+    console.log(valid);
     return valid;
 }
 
@@ -58,6 +62,7 @@ function checkEmailIsValid(emailInput) {
         hideErrorMessage("email");
     }
 
+    console.log(valid);
     return valid;
 }
 
@@ -88,7 +93,7 @@ function checkPasswordsAreValid(pwdInput, confirmPwdInput) {
         hideErrorMessage("pwd");
         hideErrorMessage("confirmPwd");
     }
-
+    console.log(valid);
     return valid;
 }
 
@@ -106,5 +111,6 @@ function checkFormIsValid() {
     const isValidEmail = checkEmailIsValid(emailInput);
     const areValidPasswords = checkPasswordsAreValid(pwdInput, confirmPwdInput);
 
-    if (isValidName === isValidEmail === areValidPasswords) submitForm();
+    console.log(isValidEmail, isValidName, areValidPasswords)
+    if (isValidName === isValidEmail === areValidPasswords === true) submitForm();
 }

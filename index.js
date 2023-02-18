@@ -24,7 +24,6 @@ function hideErrorMessage(fieldId) {
     let input = document.getElementById(fieldId).style;
     let error = document.querySelector('#' + fieldId + 'OnError');
     let brElement = document.querySelector('#' + fieldId + 'Br');
-    console.log(brElement)
     input.borderStyle = 'solid';
     input.borderColor = 'chartreuse';
     input.borderWidth = '3px';
@@ -83,16 +82,12 @@ function checkPasswordsAreValid(pwdInput, confirmPwdInput) {
         showErrorMessagge("pwd", invalidPasswordError);
         valid = false;
     }
-    if (confirmPwdInput.length > 0 && confirmPwdInput.length < 8) {
-        showErrorMessagge("confirmPwd", invalidPasswordError);
-        valid = false;
-    }
     if (pwdInput.length > 0 && pwdInput.length > 7 && confirmPwdInput.length === 0 && pwdInput !== confirmPwdInput) {
         showErrorMessagge("pwd", notEqualPasswordsError);
         showErrorMessagge("confirmPwd", emptyError);
         valid = false;
     }
-    if (pwdInput.length === 0 && confirmPwdInput.length > 0 && confirmPwdInput.length > 7 && pwdInput !== confirmPwdInput) {
+    if (pwdInput.length === 0 && confirmPwdInput.length > 0 && pwdInput !== confirmPwdInput) {
         showErrorMessagge("pwd", emptyError);
         showErrorMessagge("confirmPwd", notEqualPasswordsError);
         valid = false;

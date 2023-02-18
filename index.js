@@ -19,7 +19,6 @@ function hideErrorMessage(fieldId) {
     let input = document.getElementById(fieldId).style;
     let error = document.querySelector('#' + fieldId + 'OnError');
     let brElement = document.querySelector('#' + fieldId + 'Br');
-    console.log(brElement)
     input.borderStyle = 'solid';
     input.borderColor = 'chartreuse';
     input.borderWidth = '3px';
@@ -44,7 +43,6 @@ function checkNameIsValid(nameInput) {
         hideErrorMessage("name");
     }
 
-    console.log(valid);
     return valid;
 }
 
@@ -62,7 +60,6 @@ function checkEmailIsValid(emailInput) {
         hideErrorMessage("email");
     }
 
-    console.log(valid);
     return valid;
 }
 
@@ -93,7 +90,7 @@ function checkPasswordsAreValid(pwdInput, confirmPwdInput) {
         hideErrorMessage("pwd");
         hideErrorMessage("confirmPwd");
     }
-    console.log(valid);
+
     return valid;
 }
 
@@ -111,6 +108,5 @@ function checkFormIsValid() {
     const isValidEmail = checkEmailIsValid(emailInput);
     const areValidPasswords = checkPasswordsAreValid(pwdInput, confirmPwdInput);
 
-    console.log(isValidEmail, isValidName, areValidPasswords)
     if (isValidName === true && isValidEmail === true && areValidPasswords === true) submitForm();
 }

@@ -1,0 +1,66 @@
+html {
+    font-family: Arial, Helvetica, serif;
+    background-color: #242933;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    height: 100%;
+}
+
+h1 {
+    margin-top: 40px;
+}
+
+h1, label {
+    color: #adbbe2;
+}
+
+label {
+    font-family: Arial, Helvetica;
+}
+
+div {
+    background-color: #2f3644;
+    justify-content: center;
+    width: 500px;
+    height: 92%;
+    display: flex;
+    margin-top: 20px;
+    margin-right: auto; 
+    margin-left: auto;
+    border: 3px outset #3e455b;
+    border-style: solid;
+    border-radius: 5px;
+    overflow: auto;
+}
+
+.field {
+    width: 420px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+#check {
+    color: white;
+    font-weight: bold;
+    background-color: #6c63ff;
+    height: 45px;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.errorMessage {
+    display: none;
+    color: red;
+}
+
+#brElement {
+    display: block;
+}

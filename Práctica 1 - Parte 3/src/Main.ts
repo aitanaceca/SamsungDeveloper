@@ -70,7 +70,7 @@ class Main {
 
 var main: Main = new Main();
 var personas: Array<Persona> = main.crearAgenda();
-console.log("################## AGENDA SIN ACTUALIZAR ##################");
+console.log("################## AGENDA ORIGINAL ##################");
 main.mostrarAgenda(personas);
 
 var searchedDni = "33333333C";

@@ -1,0 +1,332 @@
+{
+    "lista_juan": {
+        "cereales": {
+            "unidades": 1
+        },
+        "leche": {
+            "unidades": 6
+        },
+        "papel_higienico": {
+            "unidades": 12
+        },
+        "peras": {
+            "unidades": 2
+        },
+        "macarrones": {
+            "unidades": 2
+        },
+        "pan": {
+            "unidades": 3
+        },
+        "filetes_pollo": {
+            "unidades": 2
+        },
+        "habituales": ["pan", "leche", "papel_higienico"]
+    },
+
+    "dia": {
+        "informacion": {
+            "nombre": "Supermercados Dia",
+            "direccion": {
+                "calle": "Calle Noche",
+                "numero": 3
+            },
+            "geolocalizacion": [
+                "40°36'10.5\"N",
+                "3°41'47.7\"W"
+            ]
+        },
+        "catalogo": {
+            "productos": {
+                "cereales": {
+                    "unidad de medida": "kg",
+                    "precio": "3€ / kg",
+                    "adquirido": true
+                },
+                "leche": {
+                    "unidad de medida": "litros",
+                    "precio": "0.98€ / L",
+                    "adquirido": false
+                },
+                "papel_higienico": {
+                    "unidad de medida": "rollo",
+                    "precio": "0.46€ / rollo",
+                    "adquirido": false
+                },
+                "peras": {
+                    "unidad de medida": "kg",
+                    "precio": "1.35€ / kg",
+                    "adquirido": false
+                },
+                "macarrones": {
+                    "unidad de medida": "kg",
+                    "precio": "1.5€ / kg",
+                    "adquirido": false
+                },
+                "pan": {
+                    "unidad de medida": "barra",
+                    "precio": "0.62€ / barra",
+                    "adquirido": false
+                },
+                "filetes_pollo": {
+                    "unidad de medida": "kg",
+                    "precio": "6.49€ / kg",
+                    "adquirido": false
+                }
+            },
+            "ofertas": {
+                "cereales": {
+                    "descripcion": "20% de descuento / kg",
+                    "vigencia": {
+                        "inicio": "12/02/2023",
+                        "fin": "19/06/2023"
+                    }
+                }
+            }
+        }
+    },
+    "mercadona": {
+        "informacion": {
+            "nombre": "Mercadona",
+            "direccion": {
+                "calle": "Calle Mercado",
+                "numero": 35
+            },
+            "geolocalizacion": [
+                "40°36'05.5\"N",
+                "3°41'51.9\"W"
+            ]
+        },
+        "catalogo": {
+            "productos": {
+                "cereales": {
+                    "unidad de medida": "gramos",
+                    "precio": "3.2€ / kg",
+                    "adquirido": false
+                },
+                "leche": {
+                    "unidad de medida": "litros",
+                    "precio": "0.99€ / L",
+                    "adquirido": false
+                },
+                "papel_higienico": {
+                    "unidad de medida": "rollo",
+                    "precio": "0.44€ / rollo",
+                    "adquirido": false
+                },
+                "peras": {
+                    "unidad de medida": "gramos",
+                    "precio": "2€ / kg",
+                    "adquirido": false
+                },
+                "macarrones": {
+                    "unidad de medida": "gramos",
+                    "precio": "1.7€ / kg",
+                    "adquirido": false
+                },
+                "pan": {
+                    "unidad de medida": "barra",
+                    "precio": "0.56€ / barra",
+                    "adquirido": true
+                },
+                "filetes_pollo": {
+                    "unidad de medida": "kg",
+                    "precio": "6.79€ / kg",
+                    "adquirido": false
+                }
+            },
+            "ofertas": {
+                "pan": {
+                    "descripcion": "3x2",
+                    "vigencia": {
+                        "inicio": "03/03/2023",
+                        "fin": "20/06/2023"
+                    }
+                }
+            }
+        }
+    },
+    "lidl": {
+        "informacion": {
+            "nombre": "Lidl",
+            "direccion": {
+                "calle": "Calle Aldeanos",
+                "numero": 56
+            },
+            "geolocalizacion": [
+                "40°36'09.2\"N",
+                "3°41'56.7\"W"
+            ]
+        },
+        "catalogo": {
+            "productos": {
+                "cereales": {
+                    "unidad de medida": "gramos",
+                    "precio": "5.7€ / kg",
+                    "adquirido": false
+                },
+                "leche": {
+                    "unidad de medida": "litros",
+                    "precio": "0.87€ / L",
+                    "adquirido": false
+                },
+                "papel_higienico": {
+                    "unidad de medida": "rollo",
+                    "precio": "0.56€ / rollo",
+                    "adquirido": false
+                },
+                "peras": {
+                    "unidad de medida": "gramos",
+                    "precio": "0.98€ / kg",
+                    "adquirido": true
+                },
+                "macarrones": {
+                    "unidad de medida": "gramos",
+                    "precio": "1.9€ / kg",
+                    "adquirido": false
+                },
+                "pan": {
+                    "unidad de medida": "barra",
+                    "precio": "0.78€ / barra",
+                    "adquirido": false
+                },
+                "filetes_pollo": {
+                    "unidad de medida": "kg",
+                    "precio": "7€ / kg",
+                    "adquirido": false
+                }
+            },
+            "ofertas": {
+                "cereales": {
+                    "descripcion": "50% de descuento / kg",
+                    "vigencia": {
+                        "inicio": "23/03/2023",
+                        "fin": "19/06/2023"
+                    }
+                }
+            }
+        }
+    },
+    "carrefour": {
+        "informacion": {
+            "nombre": "Carrefour",
+            "direccion": {
+                "calle": "Calle Segura",
+                "numero": 12
+            },
+            "geolocalizacion": [
+                "40°36'04.9\"N",
+                "3°42'06.5\"W"
+            ]
+        },
+        "catalogo": {
+            "productos": {
+                "cereales": {
+                    "unidad de medida": "gramos",
+                    "precio": "2.7€ / kg",
+                    "adquirido": false
+                },
+                "leche": {
+                    "unidad de medida": "litros",
+                    "precio": "0.78€ / L",
+                    "adquirido": true
+                },
+                "papel_higienico": {
+                    "unidad de medida": "rollo",
+                    "precio": "0.34€ / rollo",
+                    "adquirido": true
+                },
+                "peras": {
+                    "unidad de medida": "gramos",
+                    "precio": "1.9€ / kg",
+                    "adquirido": false
+                },
+                "macarrones": {
+                    "unidad de medida": "gramos",
+                    "precio": "1€ / kg",
+                    "adquirido": true
+                },
+                "pan": {
+                    "unidad de medida": "barra",
+                    "precio": "0.54€ / barra",
+                    "adquirido": false
+                },
+                "filetes_pollo": {
+                    "unidad de medida": "kg",
+                    "precio": "9€ / kg",
+                    "adquirido": true
+                }
+            },
+            "ofertas": {
+                "filetes_pollo": {
+                    "descripcion": "40% de descuento / kg",
+                    "vigencia": {
+                        "inicio": "12/03/2023",
+                        "fin": "19/06/2023"
+                    }
+                }
+            }
+        }
+    },
+    "aldi" :{
+        "informacion": {
+            "nombre": "Aldi",
+            "direccion": {
+                "calle": "Calle Ternera",
+                "numero": 29
+            },
+            "geolocalizacion": [
+                "40°36'02.2\"N",
+                "3°42'16.6\"W"
+            ]
+        },
+        "catalogo": {
+            "productos": {
+                "cereales": {
+                    "unidad de medida": "gramos",
+                    "precio": "2.5€ / kg",
+                    "adquirido": false
+                },
+                "leche": {
+                    "unidad de medida": "litros",
+                    "precio": "0.95€ / L",
+                    "adquirido": false
+                },
+                "papel_higienico": {
+                    "unidad de medida": "rollo",
+                    "precio": "0.5€ / rollo",
+                    "adquirido": false
+                },
+                "peras": {
+                    "unidad de medida": "gramos",
+                    "precio": "1.4€ / kg",
+                    "adquirido": false
+                },
+                "macarrones": {
+                    "unidad de medida": "gramos",
+                    "precio": "1.2€ / kg",
+                    "adquirido": false
+                },
+                "pan": {
+                    "unidad de medida": "barra",
+                    "precio": "0.87€ / barra",
+                    "adquirido": false
+                },
+                "filetes_pollo": {
+                    "unidad de medida": "kg",
+                    "precio": "8€ / kg",
+                    "adquirido": false
+                }
+            },
+            "ofertas": {
+                "filetes_pollo": {
+                    "descripcion": "30% de descuento / kg",
+                    "vigencia": {
+                        "inicio": "02/03/2023",
+                        "fin": "19/06/2023"
+                    }
+                }
+            }
+        }
+    }
+}

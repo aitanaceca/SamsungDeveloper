@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<lista tipo="compra">
+  <lista_juan>
+    <cereales>
+      <unidades>1</unidades>
+    </cereales>
+    <leche>
+      <unidades>6</unidades>
+    </leche>
+    <papel_higienico>
+      <unidades>12</unidades>
+    </papel_higienico>
+    <peras>
+      <unidades>2</unidades>
+    </peras>
+    <macarrones>
+      <unidades>2</unidades>
+    </macarrones>
+    <pan>
+      <unidades>3</unidades>
+    </pan>
+    <filetes_pollo>
+      <unidades>2</unidades>
+    </filetes_pollo>
+    <habituales>pan</habituales>
+    <habituales>leche</habituales>
+    <habituales>papel_higienico</habituales>
+  </lista_juan>
+  <dia>
+    <informacion>
+      <nombre>Supermercados Dia</nombre>
+      <direccion>
+        <calle>Calle Noche</calle>
+        <numero>3</numero>
+      </direccion>
+      <geolocalizacion>40°36'10.5"N</geolocalizacion>
+      <geolocalizacion>3°41'47.7"W</geolocalizacion>
+    </informacion>
+    <catalogo>
+      <productos>
+        <cereales>
+          <precio>3€ / kg</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </cereales>
+        <leche>
+          <precio>0.98€ / L</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>litros</unidad_de_medida>
+        </leche>
+        <papel_higienico>
+          <precio>0.46€ / rollo</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>rollo</unidad_de_medida>
+        </papel_higienico>
+        <peras>
+          <precio>1.35€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </peras>
+        <macarrones>
+          <precio>1.5€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </macarrones>
+        <pan>
+          <precio>0.62€ / barra</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>barra</unidad_de_medida>
+        </pan>
+        <filetes_pollo>
+          <precio>6.49€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </filetes_pollo>
+      </productos>
+      <ofertas>
+        <cereales>
+          <descripcion>20% de descuento / kg</descripcion>
+          <vigencia>
+            <inicio>12/02/2023</inicio>
+            <fin>19/06/2023</fin>
+          </vigencia>
+        </cereales>
+      </ofertas>
+    </catalogo>
+  </dia>
+  <mercadona>
+    <informacion>
+      <nombre>Mercadona</nombre>
+      <direccion>
+        <calle>Calle Mercado</calle>
+        <numero>35</numero>
+      </direccion>
+      <geolocalizacion>40°36'05.5"N</geolocalizacion>
+      <geolocalizacion>3°41'51.9"W</geolocalizacion>
+    </informacion>
+    <catalogo>
+      <productos>
+        <cereales>
+          <precio>3.2€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </cereales>
+        <leche>
+          <precio>0.99€ / L</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>litros</unidad_de_medida>
+        </leche>
+        <papel_higienico>
+          <precio>0.44€ / rollo</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>rollo</unidad_de_medida>
+        </papel_higienico>
+        <peras>
+          <precio>2€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </peras>
+        <macarrones>
+          <precio>1.7€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </macarrones>
+        <pan>
+          <precio>0.56€ / barra</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>barra</unidad_de_medida>
+        </pan>
+        <filetes_pollo>
+          <precio>6.79€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </filetes_pollo>
+      </productos>
+      <ofertas>
+        <pan>
+          <descripcion>3x2</descripcion>
+          <vigencia>
+            <inicio>03/03/2023</inicio>
+            <fin>20/06/2023</fin>
+          </vigencia>
+        </pan>
+      </ofertas>
+    </catalogo>
+  </mercadona>
+  <lidl>
+    <informacion>
+      <nombre>Lidl</nombre>
+      <direccion>
+        <calle>Calle Aldeanos</calle>
+        <numero>56</numero>
+      </direccion>
+      <geolocalizacion>40°36'09.2"N</geolocalizacion>
+      <geolocalizacion>3°41'56.7"W</geolocalizacion>
+    </informacion>
+    <catalogo>
+      <productos>
+        <cereales>
+          <precio>5.7€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </cereales>
+        <leche>
+          <precio>0.87€ / L</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>litros</unidad_de_medida>
+        </leche>
+        <papel_higienico>
+          <precio>0.56€ / rollo</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>rollo</unidad_de_medida>
+        </papel_higienico>
+        <peras>
+          <precio>0.98€ / kg</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </peras>
+        <macarrones>
+          <precio>1.9€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </macarrones>
+        <pan>
+          <precio>0.78€ / barra</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>barra</unidad_de_medida>
+        </pan>
+        <filetes_pollo>
+          <precio>7€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </filetes_pollo>
+      </productos>
+      <ofertas>
+        <cereales>
+          <descripcion>50% de descuento / kg</descripcion>
+          <vigencia>
+            <inicio>23/03/2023</inicio>
+            <fin>19/06/2023</fin>
+          </vigencia>
+        </cereales>
+      </ofertas>
+    </catalogo>
+  </lidl>
+  <carrefour>
+    <informacion>
+      <nombre>Carrefour</nombre>
+      <direccion>
+        <calle>Calle Segura</calle>
+        <numero>12</numero>
+      </direccion>
+      <geolocalizacion>40°36'04.9"N</geolocalizacion>
+      <geolocalizacion>3°42'06.5"W</geolocalizacion>
+    </informacion>
+    <catalogo>
+      <productos>
+        <cereales>
+          <precio>2.7€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </cereales>
+        <leche>
+          <precio>0.78€ / L</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>litros</unidad_de_medida>
+        </leche>
+        <papel_higienico>
+          <precio>0.34€ / rollo</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>rollo</unidad_de_medida>
+        </papel_higienico>
+        <peras>
+          <precio>1.9€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </peras>
+        <macarrones>
+          <precio>1€ / kg</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </macarrones>
+        <pan>
+          <precio>0.54€ / barra</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>barra</unidad_de_medida>
+        </pan>
+        <filetes_pollo>
+          <precio>9€ / kg</precio>
+          <adquirido>true</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </filetes_pollo>
+      </productos>
+      <ofertas>
+        <filetes_pollo>
+          <descripcion>40% de descuento / kg</descripcion>
+          <vigencia>
+            <inicio>12/03/2023</inicio>
+            <fin>19/06/2023</fin>
+          </vigencia>
+        </filetes_pollo>
+      </ofertas>
+    </catalogo>
+  </carrefour>
+  <aldi>
+    <informacion>
+      <nombre>Aldi</nombre>
+      <direccion>
+        <calle>Calle Ternera</calle>
+        <numero>29</numero>
+      </direccion>
+      <geolocalizacion>40°36'02.2"N</geolocalizacion>
+      <geolocalizacion>3°42'16.6"W</geolocalizacion>
+    </informacion>
+    <catalogo>
+      <productos>
+        <cereales>
+          <precio>2.5€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </cereales>
+        <leche>
+          <precio>0.95€ / L</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>litros</unidad_de_medida>
+        </leche>
+        <papel_higienico>
+          <precio>0.5€ / rollo</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>rollo</unidad_de_medida>
+        </papel_higienico>
+        <peras>
+          <precio>1.4€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </peras>
+        <macarrones>
+          <precio>1.2€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>gramos</unidad_de_medida>
+        </macarrones>
+        <pan>
+          <precio>0.87€ / barra</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>barra</unidad_de_medida>
+        </pan>
+        <filetes_pollo>
+          <precio>8€ / kg</precio>
+          <adquirido>false</adquirido>
+          <unidad_de_medida>kg</unidad_de_medida>
+        </filetes_pollo>
+      </productos>
+      <ofertas>
+        <filetes_pollo>
+          <descripcion>30% de descuento / kg</descripcion>
+          <vigencia>
+            <inicio>02/03/2023</inicio>
+            <fin>19/06/2023</fin>
+          </vigencia>
+        </filetes_pollo>
+      </ofertas>
+    </catalogo>
+  </aldi>
+</lista>

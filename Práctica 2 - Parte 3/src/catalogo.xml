@@ -33,8 +33,10 @@
         <calle>Calle Noche</calle>
         <numero>3</numero>
       </direccion>
-      <geolocalizacion>40°36'10.5"N</geolocalizacion>
-      <geolocalizacion>3°41'47.7"W</geolocalizacion>
+      <geolocalizacion>
+        <norte>40°36'10.5"</norte>
+        <oeste>3°41'47.7"</oeste>
+      </geolocalizacion>
     </informacion>
     <catalogo>
       <productos>
@@ -92,8 +94,10 @@
         <calle>Calle Mercado</calle>
         <numero>35</numero>
       </direccion>
-      <geolocalizacion>40°36'05.5"N</geolocalizacion>
-      <geolocalizacion>3°41'51.9"W</geolocalizacion>
+      <geolocalizacion>
+        <norte>40°36'05.5"</norte>
+        <oeste>3°41'51.9"</oeste>
+      </geolocalizacion>
     </informacion>
     <catalogo>
       <productos>
@@ -151,8 +155,10 @@
         <calle>Calle Aldeanos</calle>
         <numero>56</numero>
       </direccion>
-      <geolocalizacion>40°36'09.2"N</geolocalizacion>
-      <geolocalizacion>3°41'56.7"W</geolocalizacion>
+      <geolocalizacion>
+        <norte>40°36'09.2"</norte>
+        <oeste>3°41'56.7"</oeste>
+      </geolocalizacion>
     </informacion>
     <catalogo>
       <productos>
@@ -210,8 +216,10 @@
         <calle>Calle Segura</calle>
         <numero>12</numero>
       </direccion>
-      <geolocalizacion>40°36'04.9"N</geolocalizacion>
-      <geolocalizacion>3°42'06.5"W</geolocalizacion>
+      <geolocalizacion>
+        <norte>40°36'04.9"</norte>
+        <oeste>3°42'06.5"</oeste>
+      </geolocalizacion>
     </informacion>
     <catalogo>
       <productos>
@@ -269,8 +277,10 @@
         <calle>Calle Ternera</calle>
         <numero>29</numero>
       </direccion>
-      <geolocalizacion>40°36'02.2"N</geolocalizacion>
-      <geolocalizacion>3°42'16.6"W</geolocalizacion>
+      <geolocalizacion>
+        <norte>40°36'02.2"</norte>
+        <oeste>3°42'16.6"</oeste>
+      </geolocalizacion>
     </informacion>
     <catalogo>
       <productos>

@@ -13,7 +13,9 @@ function selectedVideo(event) {
     const reader = new FileReader();
 
     reader.addEventListener("load", function () {
-        validFile = (reader.result).startsWith('data:video');
+        const type = file.type;
+        const name = file.name;
+        validFile = (type.startsWith('video')) && ((name.endsWith('.mp4')) || (name.endsWith('.ogv')) || (name.endsWith('.webm')));
         if (validFile) {
             video.src = reader.result;
             video.removeAttribute('hidden');

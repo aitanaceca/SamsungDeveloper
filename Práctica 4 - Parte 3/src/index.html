@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Practica 4</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="principal">
+            <div class="titleZone">
+                <h1>Carga de vídeo online.</h1>
+                <input type="file" name="file" id="file" accept=".webm, .mp4, .ogv" onchange="selectedVideo(event)"/>
+            </div>
+            <div class="videoZone" id="videoZone">
+                <video id="video" name="video" class="video" alt="video" hidden>
+                    <source src="" type="video/*">
+                </video>
+            </div>
+            <br>
+            <div class="buttonsZone" id="buttonsZone" hidden>
+                <button id="play" type="button" class="button" onclick=playVideo()>Play</button>
+                <button id="volinc" type="button" class="button" onclick=volumeUp()>Vol +</button>
+                <button id="voldec" type="button" class="button" onclick=volumeDown()>Vol -</button>
+                <button id="pause" type="button" class="button" onclick=pauseVideo()>Pause</button>
+            </div>
+        </div>
+    </body>
+</html>

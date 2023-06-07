@@ -48,7 +48,7 @@ input[type="file"]::file-selector-button {
     background-color: #f19a2f;
     border-radius: 5px;
     border: #f19a2f;
-    width: 100px;
+    width: auto;
     height: 25px;
     font-weight: bold;
 }

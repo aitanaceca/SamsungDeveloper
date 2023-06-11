@@ -5,7 +5,7 @@ USE samsung_developer;
 
 CREATE TABLE usuario (
 	id INTEGER AUTO_INCREMENT PRIMARY KEY,
-    nombre VARCHAR NOT NULL,
-    apellido VARCHAR NOT NULL,
-    email VARCHAR NOT NULL
+    nombre VARCHAR(100) NOT NULL,
+    apellido VARCHAR(100) NOT NULL,
+    email VARCHAR(255) NOT NULL
 );
